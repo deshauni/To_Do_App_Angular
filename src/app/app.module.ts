@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -13,6 +14,7 @@ import { ToDoListComponent } from './to-do-list/to-do-list.component';
   imports:      [
     BrowserModule,
     NgbModule.forRoot(),
+    HttpClientModule
     ],
   declarations: [
     AppComponent,

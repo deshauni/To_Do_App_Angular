@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
 
 
@@ -18,7 +17,7 @@ import { ToDoListComponent } from './to-do-list/to-do-list.component';
   declarations: [
     AppComponent,
     ToDoListComponent,
-    HttpClientModule
+    
   ],
   bootstrap: [
     AppComponent

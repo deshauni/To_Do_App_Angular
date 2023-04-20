@@ -1,0 +1,32 @@
+
+<div class="container">
+  <div class="row">
+    <h2>To Do Task Application</h2>
+    <table class="tble">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>title</th>
+          <th>completed</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+
+
+          <tr *ngFor="let task of tasks1" [class.selected]="isSelected(task)">
+          <td>{{ task.id }}</td>
+          <td>{{ task.title }}</td>
+          <td>{{ task.completed }}</td>
+          <td><input type="checkbox" (change)="toggleSelected(task)" ></td>
+
+
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+

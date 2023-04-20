@@ -5,6 +5,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TodolistComponent } from './todolist/todolist.component';
+
 
 
 
@@ -14,7 +16,9 @@ import { HttpClientModule } from '@angular/common/http';
     NgbModule.forRoot(),
     ],
   declarations: [
-    AppComponent],
+    AppComponent,
+    TodolistComponent,
+  ],
   bootstrap: [
     AppComponent
     ]
